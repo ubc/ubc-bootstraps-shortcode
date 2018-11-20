@@ -84,7 +84,7 @@ function spanbutton_shortcode( $atts, $content = null ) {
 	extract( shortcode_atts( array(
       'name' => 'primary',
       ), $atts ) );
-   return '<span class="btn btn-' . esc_attr($class) . '">' . do_shortcode($content) . '</span>';
+   return '<span class="btn btn-' . esc_attr( $name ) . '">' . do_shortcode( $content ) . '</span>';
 }
 add_shortcode( 'buttoncon', 'spanbutton_shortcode' );
 
